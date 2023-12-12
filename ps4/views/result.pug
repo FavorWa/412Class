@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Spotify Result with Form
+  body
+    h1 Spotify Result
+    form(action='/ps4/promise', method='post')
+      label(for='artistId') Enter Artist ID:
+      input(type='text', name='artistId', id='artistId')
+      button(type='submit') Search
+    p Artist Information: #{data}  // Update this based on the actual response structure
